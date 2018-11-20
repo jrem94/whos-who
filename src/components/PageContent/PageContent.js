@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import Nav from '../Nav/Nav'
 
 class PageContent extends Component {
   render () {
     return (
       <div>
-        This is where the landing, about, or proof components go
+        <Nav />
       </div>
     )
   }

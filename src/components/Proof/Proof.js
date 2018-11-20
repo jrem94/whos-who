@@ -4,7 +4,8 @@ class Proof extends Component {
   render () {
     return (
       <div>
-        <p>This is where the projects go</p>
+        <h1>Proof</h1>
+        <p>Awesome projects go here!</p>
       </div>
     )
   }
