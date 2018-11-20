@@ -9,9 +9,9 @@ class Nav extends Component {
   render () {
     return (
       <Router>
-        <StyledNav>
+        <div>
           <nav>
-            <ul>
+            <StyledNav>
               <li>
                 <Link to='/'>Home</Link>
               </li>
@@ -21,13 +21,13 @@ class Nav extends Component {
               <li>
                 <Link to='/proof'>Proof</Link>
               </li>
-            </ul>
+            </StyledNav>
           </nav>
 
           <Route path='/' exact component={Landing} />
           <Route path='/about' exact component={About} />
           <Route path='/proof' exact component={Proof} />
-        </StyledNav>
+        </div>
       </Router>
     )
   }
