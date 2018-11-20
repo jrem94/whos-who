@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
+import StyledLanding from './StyledLanding'
 
 class Landing extends Component {
   render () {
     return (
-      <div>
+      <StyledLanding>
         <h1>Home</h1>
         <p>This is the home page!</p>
-      </div>
+      </StyledLanding>
     )
   }
 }

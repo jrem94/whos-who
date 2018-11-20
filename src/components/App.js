@@ -8,9 +8,11 @@ class App extends Component {
   render () {
     return (
       <StyledApp className='App'>
-        <PictureFrame />
-        <Engraving />
-        <PageContent />
+        <div>
+          <PictureFrame />
+          <Engraving />
+          <PageContent />
+        </div>
       </StyledApp>
     )
   }
