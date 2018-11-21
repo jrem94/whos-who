@@ -1,5 +1,12 @@
 import React, { Component } from 'react'
-import StyledEngraving from './StyledEngraving'
+import styled from 'styled-components'
+
+const StyledEngraving = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: slategray;
+`
 
 class Engraving extends Component {
   render () {

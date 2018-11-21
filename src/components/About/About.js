@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
-import StyledAbout from './StyledAbout'
+import styled from 'styled-components'
+
+const StyledAbout = styled.div`
+  background-color: yellowgreen;
+`
 
 class About extends Component {
   render () {

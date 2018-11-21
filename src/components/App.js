@@ -8,18 +8,16 @@ const StyledApp = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: lightseagreen;
+  background-image: linear-gradient(to right bottom, #051937, #071e3f, #0a2348, #0d2850, #102d59);;
 `
 
 class App extends Component {
   render () {
     return (
       <StyledApp className='App'>
-        <div>
-          <PictureFrame />
-          <Engraving />
-          <PageContent />
-        </div>
+        <PictureFrame />
+        <Engraving />
+        <PageContent />
       </StyledApp>
     )
   }
