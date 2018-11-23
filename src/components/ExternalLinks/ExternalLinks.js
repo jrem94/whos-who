@@ -3,30 +3,43 @@ import styled from 'styled-components'
 import Button from '@material-ui/core/Button'
 
 const StyledExternalLinks = styled.div`
-    text-decoration: none;
-    justify-content: space-between
+    margin: 10px;
+`
+const HorizontalSpace = styled.span`
+  margin: 10px;
+`
+const A = styled.a`
+  text-decoration: none;
 `
 
 class ExternalLinks extends Component {
   render () {
     return (
-      <div>
+      <nav style={{ textDecoration: 'slategray' }}>
         <StyledExternalLinks>
-          <a href='mailto:jrem94@live.com?Subject=Portfolio%20message'>
-            <Button variant='contained' color='secondary'>Email</Button>
-          </a>
-          <a
+          <A href='mailto:jrem94@live.com?Subject=Portfolio%20message'>
+            <Button variant='contained' style={{ backgroundColor: '#406E8E' }}>
+              Email
+            </Button>
+          </A>
+          <HorizontalSpace />
+          <A
             href='https://github.com/jrem94?tab=repositories'
             rel='noopener noreferrer'
             target='_blank'
           >
-            <Button variant='contained' color='secondary'>GitHub</Button>
-          </a>
-          <a href='../../resume.pdf' download='Joshus Morris Resume.pdf'>
-            <Button variant='contained' color='secondary'>Resume</Button>
-          </a>
+            <Button variant='contained' style={{ backgroundColor: '#406E8E' }}>
+              GitHub
+            </Button>
+          </A>
+          <HorizontalSpace />
+          <A href='../../resume.pdf' download='Joshus Morris Resume.pdf'>
+            <Button variant='contained' style={{ backgroundColor: '#406E8E' }}>
+              Resume
+            </Button>
+          </A>
         </StyledExternalLinks>
-      </div>
+      </nav>
     )
   }
 }

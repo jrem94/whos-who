@@ -4,7 +4,7 @@ import ExternalLinks from '../ExternalLinks/ExternalLinks'
 import styled from 'styled-components'
 
 const StyledPageContent = styled.div`
-  background-color: lightslategray;
+  background-color: #A2D3FF;
   display: flex;
   flex-direction: column;
   width: 95%;

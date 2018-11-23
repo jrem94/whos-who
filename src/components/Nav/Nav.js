@@ -7,8 +7,10 @@ import styled from 'styled-components'
 import Button from '@material-ui/core/Button'
 
 const StyledNav = styled.div`
-  text-decoration: none;
-  justify-content: space-between
+  margin: 10px;
+`
+const HorizontalSpace = styled.span`
+  margin: 10px;
 `
 
 class Nav extends Component {
@@ -16,16 +18,33 @@ class Nav extends Component {
     return (
       <Router>
         <div>
-          <nav>
+          <nav style={{ textDecoration: 'slategray' }}>
             <StyledNav>
-              <Link to='/'>
-                <Button variant='contained' color='secondary'>Home</Button>
+              <Link to='/' style={{ textDecoration: 'none' }}>
+                <Button
+                  variant='contained'
+                  style={{ backgroundColor: '#406E8E' }}
+                >
+                  Home
+                </Button>
               </Link>
-              <Link to='/about'>
-                <Button variant='contained' color='secondary'>About</Button>
+              <HorizontalSpace />
+              <Link to='/about' style={{ textDecoration: 'none' }}>
+                <Button
+                  variant='contained'
+                  style={{ backgroundColor: '#406E8E' }}
+                >
+                  About
+                </Button>
               </Link>
-              <Link to='/proof'>
-                <Button variant='contained' color='secondary'>Proof</Button>
+              <HorizontalSpace />
+              <Link to='/proof' style={{ textDecoration: 'none' }}>
+                <Button
+                  variant='contained'
+                  style={{ backgroundColor: '#406E8E' }}
+                >
+                  Proof
+                </Button>
               </Link>
             </StyledNav>
           </nav>
