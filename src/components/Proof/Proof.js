@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 const StyledProof = styled.div`
   background-color: #CBF7ED;
+  padding: 10px;
 `
 const Anchor = styled.a`
   text-decoration: none;

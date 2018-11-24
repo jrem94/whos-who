@@ -5,13 +5,14 @@ import CardContent from '@material-ui/core/CardContent'
 
 const StyledAbout = styled.div`
   background-color: #CBF7ED;
+  padding: 10px;
 `
 const CardContainer = styled.div`
   display: flex;
   flex-direction: row;
 `
 const HorizontalSpace = styled.span`
-  margin: 25px;
+  margin: 40px;
 `
 
 class About extends Component {
@@ -27,7 +28,7 @@ class About extends Component {
             <CardContent>
               <h3>Professional</h3>
               <p>
-                Personal growth is very important to me, and always has been.
+                Growth is very important to me, and always has been.
                 That's why no matter where I've worked or what the job was I always
                 strived to excell - to set new standards, and make the overall
                 quality or the product or the service I was proving better.
