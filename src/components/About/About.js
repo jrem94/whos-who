@@ -5,7 +5,7 @@ import CardContent from '@material-ui/core/CardContent'
 
 const StyledAbout = styled.div`
   background-color: #CBF7ED;
-  padding: 10px;
+  padding: 20px;
 `
 const CardContainer = styled.div`
   display: flex;

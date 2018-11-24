@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent'
 
 const StyledLanding = styled.div`
   background-color: #CBF7ED;
-  padding: 10px;
+  padding: 20px;
 `
 const StyledNav = styled.nav`
   display: flex;
@@ -17,8 +17,11 @@ const HorizontalSpace = styled.span`
   margin: 40px;
 `
 const CardContainer = styled.div`
-  display: flex;
-  flex-direction: row;
+  float: right;
+  flex-direction: column;
+`
+const VerticalSpace = styled.div`
+  margin: 20px;
 `
 
 class Landing extends Component {
@@ -29,25 +32,52 @@ class Landing extends Component {
         <p>
           Hello and welcome! This is my portfolio site, made with React! Feel free to navigate using the
           {' '}
-          top navigation bar, or if you need any additional information or would like to contact me
-          directly please reference the navigation bar at the bottom of the page. Thank you, and enjoy
+          top navigation bar,<br />
+          or if you need any additional information or would like to contact me
+          directly please reference the navigation
+          {' '}
+          <br />
+          {' '}
+          bar at the bottom of the page. Thank you, and enjoy
           your visit!
         </p>
+        <CardContainer>
+          <Card>
+            <CardContent>
+              "No one in the brief history of <br />
+              computing has ever written a <br />
+              piece of perfect software. It's <br />
+              unlikely that you'll be the first."<br />
+              - Andy Hunt
+            </CardContent>
+          </Card>
+        </CardContainer>
         <br />
-        <p>Please select which you would like to do: </p>
-        <StyledNav>
-          <Link to='/about' style={{ textDecoration: 'none' }}>
-            <Button variant='contained' style={{ backgroundColor: '#406E8E' }}>
-              Learn about me
-            </Button>
-          </Link>
-          <HorizontalSpace />
-          <Link to='/proof' style={{ textDecoration: 'none' }}>
-            <Button variant='contained' style={{ backgroundColor: '#406E8E' }}>
-              See what I've done
-            </Button>
-          </Link>
-        </StyledNav>
+        <div>
+          <p>Please select which you would like to do: </p>
+          <VerticalSpace />
+          <VerticalSpace />
+          <VerticalSpace />
+          <StyledNav>
+            <Link to='/about' style={{ textDecoration: 'none' }}>
+              <Button
+                variant='contained'
+                style={{ backgroundColor: '#406E8E', color: 'white' }}
+              >
+                Learn about me
+              </Button>
+            </Link>
+            <HorizontalSpace />
+            <Link to='/proof' style={{ textDecoration: 'none' }}>
+              <Button
+                variant='contained'
+                style={{ backgroundColor: '#406E8E', color: 'white' }}
+              >
+                See what I've done
+              </Button>
+            </Link>
+          </StyledNav>
+        </div>
       </StyledLanding>
     )
   }

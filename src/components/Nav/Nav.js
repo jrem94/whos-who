@@ -8,6 +8,9 @@ import Button from '@material-ui/core/Button'
 
 const StyledNav = styled.div`
   margin: 10px;
+  display: flex;
+  align-content: center;
+  align-items: center;
 `
 const HorizontalSpace = styled.span`
   margin: 10px;
@@ -23,7 +26,7 @@ class Nav extends Component {
               <Link to='/' style={{ textDecoration: 'none' }}>
                 <Button
                   variant='contained'
-                  style={{ backgroundColor: '#406E8E' }}
+                  style={{ backgroundColor: '#406E8E', color: 'white' }}
                 >
                   Home
                 </Button>
@@ -32,7 +35,7 @@ class Nav extends Component {
               <Link to='/about' style={{ textDecoration: 'none' }}>
                 <Button
                   variant='contained'
-                  style={{ backgroundColor: '#406E8E' }}
+                  style={{ backgroundColor: '#406E8E', color: 'white' }}
                 >
                   About
                 </Button>
@@ -41,7 +44,7 @@ class Nav extends Component {
               <Link to='/proof' style={{ textDecoration: 'none' }}>
                 <Button
                   variant='contained'
-                  style={{ backgroundColor: '#406E8E' }}
+                  style={{ backgroundColor: '#406E8E', color: 'white' }}
                 >
                   Proof
                 </Button>

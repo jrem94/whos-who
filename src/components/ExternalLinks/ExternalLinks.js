@@ -18,7 +18,10 @@ class ExternalLinks extends Component {
       <nav style={{ textDecoration: 'slategray' }}>
         <StyledExternalLinks>
           <A href='mailto:jrem94@live.com?Subject=Portfolio%20message'>
-            <Button variant='contained' style={{ backgroundColor: '#406E8E' }}>
+            <Button
+              variant='contained'
+              style={{ backgroundColor: '#406E8E', color: 'white' }}
+            >
               Email
             </Button>
           </A>
@@ -28,13 +31,19 @@ class ExternalLinks extends Component {
             rel='noopener noreferrer'
             target='_blank'
           >
-            <Button variant='contained' style={{ backgroundColor: '#406E8E' }}>
+            <Button
+              variant='contained'
+              style={{ backgroundColor: '#406E8E', color: 'white' }}
+            >
               GitHub
             </Button>
           </A>
           <HorizontalSpace />
           <A href='../../resume.pdf' download='Joshus Morris Resume.pdf'>
-            <Button variant='contained' style={{ backgroundColor: '#406E8E' }}>
+            <Button
+              variant='contained'
+              style={{ backgroundColor: '#406E8E', color: 'white' }}
+            >
               Resume
             </Button>
           </A>
