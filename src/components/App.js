@@ -8,7 +8,28 @@ const StyledApp = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(to right bottom, #051937, #071e3f, #0a2348, #0d2850, #102d59);
+  background: linear-gradient(320deg, #072b61, #462c72, #3f2963, #462c72, #072b61);
+background-size: 1000% 1000%;
+
+-webkit-animation: AnimationName 37s ease infinite;
+-moz-animation: AnimationName 37s ease infinite;
+animation: AnimationName 37s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
   width: 98%;
   margin: 0 1%;
 `

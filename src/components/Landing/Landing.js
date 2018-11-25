@@ -23,6 +23,30 @@ const CardContainer = styled.div`
 const VerticalSpace = styled.div`
   margin: 20px;
 `
+const GradButton = styled(Button)`
+background: linear-gradient(320deg, #072b61, #462c72, #3f2963, #462c72, #072b61);
+background-size: 1000% 1000%;
+
+-webkit-animation: AnimationName 37s ease infinite;
+-moz-animation: AnimationName 37s ease infinite;
+animation: AnimationName 37s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+`
 
 class Landing extends Component {
   render () {
@@ -30,7 +54,7 @@ class Landing extends Component {
       <StyledLanding>
         <h1>Home</h1>
         <p>
-          Hello and welcome! This is my portfolio site, made with React! Feel free to navigate using the
+          Hello and welcome! This is my portfolio site made with React. Feel free to navigate using the
           {' '}
           top navigation bar,<br />
           or if you need any additional information or would like to contact me
@@ -43,7 +67,7 @@ class Landing extends Component {
         </p>
         <CardContainer>
           <Card>
-            <CardContent>
+            <CardContent style={{ fontSize: '20px' }}>
               "No one in the brief history of <br />
               computing has ever written a <br />
               piece of perfect software. It's <br />
@@ -52,29 +76,28 @@ class Landing extends Component {
             </CardContent>
           </Card>
         </CardContainer>
+        <VerticalSpace />
         <br />
         <div>
           <p>Please select which you would like to do: </p>
           <VerticalSpace />
-          <VerticalSpace />
-          <VerticalSpace />
           <StyledNav>
             <Link to='/about' style={{ textDecoration: 'none' }}>
-              <Button
+              <GradButton
                 variant='contained'
                 style={{ backgroundColor: '#406E8E', color: 'white' }}
               >
                 Learn about me
-              </Button>
+              </GradButton>
             </Link>
             <HorizontalSpace />
             <Link to='/proof' style={{ textDecoration: 'none' }}>
-              <Button
+              <GradButton
                 variant='contained'
                 style={{ backgroundColor: '#406E8E', color: 'white' }}
               >
                 See what I've done
-              </Button>
+              </GradButton>
             </Link>
           </StyledNav>
         </div>

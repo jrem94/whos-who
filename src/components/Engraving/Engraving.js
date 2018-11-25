@@ -6,11 +6,11 @@ const StyledEngraving = styled.div`
   flex-direction: column;
   align-items: center;
   align-self: center;
-  color: slategray;
-  font-size: 45px;
+  color: white;
+  font-size: 30px;
 `
-const StyledSub = styled.h2`
-  font-size: 25px;
+const StyledSub = styled.h4`
+  font-size: 20px;
 `
 
 class Engraving extends Component {

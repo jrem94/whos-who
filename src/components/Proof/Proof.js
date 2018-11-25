@@ -28,8 +28,8 @@ class Proof extends Component {
         </p>
         <CardContainer>
           <Card>
-            <CardContent>
-              All projects presented on this page where made <br />
+            <CardContent style={{ fontSize: '20px' }}>
+              All projects presented on this page were made <br />
               during my time at Fasttrack'd, and represent <br />
               my accomplishments throughout the course. <br />
             </CardContent>

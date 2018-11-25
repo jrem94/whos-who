@@ -29,14 +29,14 @@ class About extends Component {
               <h3>Professional</h3>
               <p>
                 Growth is very important to me, and always has been.
-                That's why no matter where I've worked or what the job was I always
+                That's why no matter where I've worked or what the job was, I've always
                 strived to excell - to set new standards, and make the overall
-                quality or the product or the service I was proving better.
+                quality of the product or the service I was providing better.
                 During my time as a manager at Chick-Fil-A, I constantly analyzed
-                and rewrote the my store's training manual and workflow. It wasn't
-                enough to simply do my job, and meet corporate standards. I wanted
+                and rewrote the store's training manual and workflow. It wasn't
+                enough to simply do my job and meet corporate standards. I wanted
                 to exceed them, and I wanted my team members to want the same.
-                Through persistance, and constant examination of the store and myself
+                Through persistance, and constant examination of both the store and myself,
                 I managed to create and instill a habit of high productivity
                 and even higher professionalism. I carried that same energy and habit
                 with me when I became a Field Supervisor for a small plumbing
@@ -54,7 +54,7 @@ class About extends Component {
               <h3>Personal</h3>
               <p>
                 I am a twenty-four year old husband and father of two. My two children -
-                Kenzie and Rhonan - are some the most intelligent children I've ever met.
+                Kenzie and Rhonan - are some of the most intelligent children I've ever met.
                 Although that means I'm in big trouble later, for now it's fun to have an
                 active role in teaching them about the world and to experience their
                 wonder and excitment about life firsthand. My wife, Hannah, is the strongest
@@ -62,7 +62,7 @@ class About extends Component {
                 highly compassionate person who truly cares for the well-being of others
                 - even complete strangers. She is also very smart and down-to-earth which
                 helps to balance out my "dreamer" personality. She and I are a package
-                deal and wherever I go, she goes too. It has been a wonderful half-decade,
+                deal and wherever I go, she goes too. We've spent a wonderful half-decade together,
                 and I'm just as eager for the next five years. Other than my family, I
                 enjoy hosting and hanging out with close friends, and playing paintball
                 when the budget allows. I also write as a hobby, and have even published

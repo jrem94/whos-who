@@ -6,10 +6,34 @@ const StyledExternalLinks = styled.div`
     margin: 10px;
 `
 const HorizontalSpace = styled.span`
-  margin: 10px;
+  margin: 15px;
 `
 const A = styled.a`
   text-decoration: none;
+`
+const GradButton = styled(Button)`
+background: linear-gradient(320deg, #072b61, #462c72, #3f2963, #462c72, #072b61);
+background-size: 1000% 1000%;
+
+-webkit-animation: AnimationName 37s ease infinite;
+-moz-animation: AnimationName 37s ease infinite;
+animation: AnimationName 37s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
 `
 
 class ExternalLinks extends Component {
@@ -18,12 +42,12 @@ class ExternalLinks extends Component {
       <nav style={{ textDecoration: 'slategray' }}>
         <StyledExternalLinks>
           <A href='mailto:jrem94@live.com?Subject=Portfolio%20message'>
-            <Button
+            <GradButton
               variant='contained'
               style={{ backgroundColor: '#406E8E', color: 'white' }}
             >
               Email
-            </Button>
+            </GradButton>
           </A>
           <HorizontalSpace />
           <A
@@ -31,21 +55,21 @@ class ExternalLinks extends Component {
             rel='noopener noreferrer'
             target='_blank'
           >
-            <Button
+            <GradButton
               variant='contained'
               style={{ backgroundColor: '#406E8E', color: 'white' }}
             >
               GitHub
-            </Button>
+            </GradButton>
           </A>
           <HorizontalSpace />
           <A href='../../resume.pdf' download='Joshus Morris Resume.pdf'>
-            <Button
+            <GradButton
               variant='contained'
               style={{ backgroundColor: '#406E8E', color: 'white' }}
             >
               Resume
-            </Button>
+            </GradButton>
           </A>
         </StyledExternalLinks>
       </nav>
