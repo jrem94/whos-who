@@ -20,6 +20,9 @@ const CardContainer = styled.div`
   float: right;
   flex-direction: column;
 `
+const StyledUl = styled.ul`
+  font-weight: bold;
+`
 const CardContainer2 = styled.div`
   margin: 10px;
   width: 100%;
@@ -40,6 +43,7 @@ const Justifier = styled.div`
 `
 const Boldify = styled.p`
   font-weight: bold;
+  font-size: 18px;
 `
 
 class Proof extends Component {
@@ -61,7 +65,7 @@ class Proof extends Component {
             </CardContent>
           </Card>
         </CardContainer>
-        <ul>
+        <StyledUl>
           <li>
             <Anchor
               href='https://github.com/cooksystemsinc/js-assignment-quizler-jrem94'
@@ -105,13 +109,13 @@ class Proof extends Component {
             {' '}
             - A social media backend similar to Twitter built using Java 8, Spring, and Hibernate.
           </li>
-        </ul>
+        </StyledUl>
         <VerticalSpace />
         <VerticalSpace />
         <VerticalSpace />
         <small>
           My other non-cooksys related projects and respositories can be found by clicking on the "GitHub" link in the bottom navigation  bar.
-        </small>\
+        </small>
         <h2>What do I use?</h2>
         <CardContainer2>
           <Card style={{ padding: '25px' }}>

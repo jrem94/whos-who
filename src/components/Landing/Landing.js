@@ -9,7 +9,7 @@ import PictureFrame from '../PictureFrame/PictureFrame.js'
 
 const StyledLanding = styled.div`
   background-color: #CBF7ED;
-  padding: 80px;
+  padding: 20px;
 `
 const StyledNav = styled.nav`
   margin: 10px;
@@ -98,7 +98,7 @@ class Landing extends Component {
                   <Route path='/' exact component={PictureFrame} />
                 </PicDiv>
 
-                <p style={{ fontSize: '18' }}>
+                <p style={{ fontSize: '18px' }}>
                   Hello and welcome! I'm Joshua Morris his is my portfolio site.
                   {' '}
                   <br />
