@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Landing from '../Landing/Landing'
 import About from '../About/About'
 import Proof from '../Proof/Proof'
-import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'
+import { Route, NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import Button from '@material-ui/core/Button'
 
@@ -54,44 +54,42 @@ animation: AnimationName 37s ease infinite;
 class Nav extends Component {
   render () {
     return (
-      <Router>
-        <NavElements>
-          <nav style={{ textDecoration: 'slategray' }}>
-            <StyledNav>
-              <Link to='/'>
-                <GradButton
-                  variant='contained'
-                  style={{ backgroundColor: '#406E8E', color: 'white' }}
-                >
-                  Home
-                </GradButton>
-              </Link>
-              <HorizontalSpace />
-              <Link to='/about'>
-                <GradButton
-                  variant='contained'
-                  style={{ backgroundColor: '#406E8E', color: 'white' }}
-                >
-                  About
-                </GradButton>
-              </Link>
-              <HorizontalSpace />
-              <Link to='/proof'>
-                <GradButton
-                  variant='contained'
-                  style={{ backgroundColor: '#406E8E', color: 'white' }}
-                >
-                  Proof
-                </GradButton>
-              </Link>
-            </StyledNav>
-          </nav>
+      <NavElements>
+        <nav style={{ textDecoration: 'slategray' }}>
+          <StyledNav>
+            <Link to='/'>
+              <GradButton
+                variant='contained'
+                style={{ backgroundColor: '#406E8E', color: 'white' }}
+              >
+                Home
+              </GradButton>
+            </Link>
+            <HorizontalSpace />
+            <Link to='/about'>
+              <GradButton
+                variant='contained'
+                style={{ backgroundColor: '#406E8E', color: 'white' }}
+              >
+                About
+              </GradButton>
+            </Link>
+            <HorizontalSpace />
+            <Link to='/proof'>
+              <GradButton
+                variant='contained'
+                style={{ backgroundColor: '#406E8E', color: 'white' }}
+              >
+                Proof
+              </GradButton>
+            </Link>
+          </StyledNav>
+        </nav>
 
-          <Route path='/' exact component={Landing} />
-          <Route path='/about' exact component={About} />
-          <Route path='/proof' exact component={Proof} />
-        </NavElements>
-      </Router>
+        <Route path='/' exact component={Landing} />
+        <Route path='/about' exact component={About} />
+        <Route path='/proof' exact component={Proof} />
+      </NavElements>
     )
   }
 }

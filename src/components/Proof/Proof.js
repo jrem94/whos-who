@@ -13,9 +13,21 @@ const Anchor = styled.a`
 const VerticalSpace = styled.div`
   margin: 10px;
 `
+const HorizontalSpace = styled.span`
+  margin: 40px;
+`
 const CardContainer = styled.div`
   float: right;
   flex-direction: column;
+`
+const CardContainer2 = styled.div`
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
 `
 
 class Proof extends Component {
@@ -37,7 +49,10 @@ class Proof extends Component {
         </CardContainer>
         <ul>
           <li>
-            <Anchor href='https://github.com/cooksystemsinc/js-assignment-quizler-jrem94'>
+            <Anchor
+              href='https://github.com/cooksystemsinc/js-assignment-quizler-jrem94'
+              target='_blank'
+            >
               Quizler{' '}
             </Anchor>
             {' '}
@@ -45,7 +60,10 @@ class Proof extends Component {
           </li>
           <VerticalSpace />
           <li>
-            <Anchor href='https://github.com/cooksystemsinc/js-assessment-dev-duel-jrem94'>
+            <Anchor
+              href='https://github.com/cooksystemsinc/js-assessment-dev-duel-jrem94'
+              target='_blank'
+            >
               Dev-Duel{' '}
             </Anchor>
             {' '}
@@ -53,7 +71,10 @@ class Proof extends Component {
           </li>
           <VerticalSpace />
           <li>
-            <Anchor href='https://github.com/cooksystemsinc/java-assessment-smart-share-jrem94'>
+            <Anchor
+              href='https://github.com/cooksystemsinc/java-assessment-smart-share-jrem94'
+              target='_blank'
+            >
               Smart Share{' '}
             </Anchor>
             {' '}
@@ -61,7 +82,10 @@ class Proof extends Component {
           </li>
           <VerticalSpace />
           <li>
-            <Anchor href='https://github.com/cooksystemsinc/social-media-assessment-jrem94'>
+            <Anchor
+              href='https://github.com/cooksystemsinc/social-media-assessment-jrem94'
+              target='_blank'
+            >
               Social Media Backend{' '}
             </Anchor>
             {' '}
@@ -73,7 +97,51 @@ class Proof extends Component {
         <VerticalSpace />
         <small>
           My other non-cooksys related projects and respositories can be found by clicking on the "GitHub" link in the bottom navigation  bar.
-        </small>
+        </small>\
+        <h3>What do I use?</h3>
+        <CardContainer2>
+          <Card style={{ padding: '25px' }}>
+            <CardContent>
+              <h5>Software</h5>
+              <ul>
+                <li>Visual Studio Code</li>
+                <li>Exclipse</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>Postman</li>
+                <li>Console Emulator</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <HorizontalSpace />
+          <Card style={{ padding: '25px' }}>
+            <CardContent>
+              <h5>Languages</h5>
+              <ul>
+                <li>JavaScript (Node)</li>
+                <li>C#</li>
+                <li>Java 8</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Console Emulator</li>
+              </ul>
+            </CardContent>
+          </Card>
+          <HorizontalSpace />
+          <Card style={{ padding: '25px' }}>
+            <CardContent>
+              <h5>Frame Works and Libraries</h5>
+              <ul>
+                <li>Spring</li>
+                <li>JAXB</li>
+                <li>Hibernate</li>
+                <li>NodeJs</li>
+                <li>JQuery</li>
+                <li>React</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </CardContainer2>
       </StyledProof>
     )
   }

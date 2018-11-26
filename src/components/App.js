@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Route } from 'react-router-dom'
 import PictureFrame from './PictureFrame/PictureFrame.js'
 import Engraving from './Engraving/Engraving.js'
 import PageContent from './PageContent/PageContent.js'
@@ -35,10 +36,14 @@ animation: AnimationName 37s ease infinite;
 `
 
 class App extends Component {
+  state = {
+    isHidden: false
+  }
+
   render () {
     return (
       <StyledApp className='App'>
-        <PictureFrame />
+        <Route path='/' exact component={PictureFrame} />
         <Engraving />
         <PageContent />
       </StyledApp>
