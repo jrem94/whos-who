@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent'
 
 const StyledLanding = styled.div`
   background-color: #CBF7ED;
-  padding: 20px;
+  padding: 40px;
 `
 const StyledNav = styled.nav`
   display: flex;
