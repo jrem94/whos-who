@@ -67,10 +67,13 @@ class Proof extends Component {
             {' '}
             - A social media backend similar to Twitter built using Java 8, Spring, and Hibernate.
           </li>
-          <VerticalSpace />
-          <VerticalSpace />
-          <VerticalSpace />
         </ul>
+        <VerticalSpace />
+        <VerticalSpace />
+        <VerticalSpace />
+        <small>
+          My other non-cooksys related projects and respositories can be found by clicking on the "GitHub" link in the bottom navigation  bar.
+        </small>
       </StyledProof>
     )
   }

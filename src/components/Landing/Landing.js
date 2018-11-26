@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent'
 
 const StyledLanding = styled.div`
   background-color: #CBF7ED;
-  padding: 40px;
+  padding: 80px;
 `
 const StyledNav = styled.nav`
   display: flex;
@@ -53,7 +53,7 @@ class Landing extends Component {
     return (
       <StyledLanding>
         <h1>Home</h1>
-        <p>
+        <p style={{ fontSize: '18' }}>
           Hello and welcome! This is my portfolio site made with React. Feel free to navigate using the
           {' '}
           top navigation bar,<br />
