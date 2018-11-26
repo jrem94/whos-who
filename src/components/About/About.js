@@ -71,6 +71,15 @@ class About extends Component {
             </CardContent>
           </Card>
         </CardContainer>
+        <h3>So why software development?</h3>
+        <p style={{ fontWeight: 'bold' }}>
+          There are two things I've been looking for - an in-demand, highly transferable skill set, and a way to express my creativity.
+          While I was able to find a transferable skill set in plumbing - it wasn't a platform to create. And while I was able to write a
+          novel and be creative, it wasn't a very transferable or in-demand skill. As I sought to bring the two together I stumbled into
+          programming. Software development has allowed me to express myself in interesting and fun ways while it has also opened up an
+          entire industry for me to explore. It's  a field that will allow me to provide for my family, no matter where life takes us, but
+          also satisfy my desire to create.
+        </p>
       </StyledAbout>
     )
   }

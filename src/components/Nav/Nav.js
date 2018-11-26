@@ -8,6 +8,11 @@ import Button from '@material-ui/core/Button'
 
 const StyledNav = styled.div`
   margin: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
 `
 const HorizontalSpace = styled.span`
   margin: 15px;
