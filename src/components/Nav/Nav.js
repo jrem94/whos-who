@@ -13,6 +13,7 @@ const StyledNav = styled.div`
   flex-direction: row;
   align-items: center;
   align-content: center;
+  justify-content: center;
 `
 const HorizontalSpace = styled.span`
   margin: 15px;

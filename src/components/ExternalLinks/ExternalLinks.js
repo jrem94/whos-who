@@ -3,7 +3,13 @@ import styled from 'styled-components'
 import Button from '@material-ui/core/Button'
 
 const StyledExternalLinks = styled.div`
-    margin: 10px;
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 `
 const HorizontalSpace = styled.span`
   margin: 15px;
