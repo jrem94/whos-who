@@ -123,7 +123,7 @@ class Proof extends Component {
               <h3>Software</h3>
               <ul>
                 <li>Visual Studio Code</li>
-                <li>Exclipse</li>
+                <li>Eclipse</li>
                 <li>Git</li>
                 <li>GitHub</li>
                 <li>Postman</li>
