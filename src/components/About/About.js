@@ -14,15 +14,29 @@ const CardContainer = styled.div`
 const HorizontalSpace = styled.span`
   margin: 40px;
 `
+const Justifier = styled.div`
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+`
+const Boldify = styled.p`
+  font-weight: bold;
+`
 
 class About extends Component {
   render () {
     return (
       <StyledAbout>
-        <h1>About Page</h1>
-        <p>
-          Want to get to know me? Below you will find both my professional and personal biographies.
-        </p>
+        <Justifier>
+          <h1>About Page</h1>
+          <Boldify>
+            Want to get to know me? Below you will find both my professional and personal biographies.
+          </Boldify>
+        </Justifier>
         <CardContainer>
           <Card style={{ padding: '25px' }}>
             <CardContent>

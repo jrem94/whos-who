@@ -29,15 +29,29 @@ const CardContainer2 = styled.div`
   align-content: center;
   justify-content: space-around;
 `
+const Justifier = styled.div`
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+`
+const Boldify = styled.p`
+  font-weight: bold;
+`
 
 class Proof extends Component {
   render () {
     return (
       <StyledProof>
-        <h1>Proof</h1>
-        <p>
-          This is a list of my projects. Clicking the links will open up a new tab showing the GitHub respository that contains the code.
-        </p>
+        <Justifier>
+          <h1>Proof</h1>
+          <Boldify>
+            This is a list of my projects. Clicking the links will open up a new tab showing the GitHub respository that contains the code.
+          </Boldify>
+        </Justifier>
         <CardContainer>
           <Card>
             <CardContent style={{ fontSize: '20px' }}>
@@ -98,11 +112,11 @@ class Proof extends Component {
         <small>
           My other non-cooksys related projects and respositories can be found by clicking on the "GitHub" link in the bottom navigation  bar.
         </small>\
-        <h3>What do I use?</h3>
+        <h2>What do I use?</h2>
         <CardContainer2>
           <Card style={{ padding: '25px' }}>
             <CardContent>
-              <h5>Software</h5>
+              <h3>Software</h3>
               <ul>
                 <li>Visual Studio Code</li>
                 <li>Exclipse</li>
@@ -116,7 +130,7 @@ class Proof extends Component {
           <HorizontalSpace />
           <Card style={{ padding: '25px' }}>
             <CardContent>
-              <h5>Languages</h5>
+              <h3>Languages</h3>
               <ul>
                 <li>JavaScript (Node)</li>
                 <li>C#</li>
@@ -130,7 +144,7 @@ class Proof extends Component {
           <HorizontalSpace />
           <Card style={{ padding: '25px' }}>
             <CardContent>
-              <h5>Frame Works and Libraries</h5>
+              <h3>Frame Works and Libraries</h3>
               <ul>
                 <li>Spring</li>
                 <li>JAXB</li>
